@@ -1,0 +1,150 @@
+body{
+    background-color: azure;
+ 
+    
+}
+.container{
+    font-size: 200;
+   box-shadow: 8px 8px 8px 7px rgba(0, 0, 0, 0.15);
+   margin: 120px;
+   margin-left: 280px;
+   padding-left: 0;
+   overflow: hidden;
+  
+}
+.row{
+    display: flex;
+    align-items: center;
+    
+    text-align: center;
+    
+
+}
+.col-6{
+    width: 50%;
+    align-items: center;
+}
+#image-left{
+    height: 250px;
+    padding: 0;
+    width: 100%;
+}
+.section1 p{
+    font-weight: 600;
+    color: black;
+    font-size: 25px;
+}
+.main2{
+    padding-right: 22px;
+   padding-left: 0;
+}
+.section2{
+    color: darkgrey;
+}
+.image-section img{
+    height: 40px;
+    border-radius: 100%;
+    float: left;
+}
+.image-section span{
+    font-size: 15px;
+    font-weight: 800;
+    color: black;
+}
+.image-section p{
+    float: left;
+}
+.share{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-left: 30px;
+    color: hsl(217, 76%, 95%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.button-footer{
+margin-top: 7px;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.footer{
+    margin-top: 30px;
+    width: 87%;
+    height: 86px;
+    background-color: hsl(217, 26%, 35%);
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    position: absolute;
+    top: 75%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    right: -90%;
+    display: none;
+}
+.footer-active{
+    animation: slideIn 2s forwards;
+    display: flex;
+}
+.footer-passive{
+    animation: slideOut 2s forwards;
+    display: none; 
+}
+@keyframes slideIn{
+    from{
+        right: -90%;
+    }
+    to{
+        right: 7%;
+    }
+}
+@keyframes slideOut{
+    from{
+        right: 7%;
+    }
+    to{
+        right: -905;
+    }
+}
+.share{
+    position: absolute;
+    top: 83%;
+    left: 70%;
+    z-index: 2;
+}
+.icons1{
+  font-size: 13px; 
+  text-transform: uppercase; 
+  letter-spacing: 5px;
+  color: hsl(212, 23%, 65%);
+  margin-left: 33px;
+  margin-left: 10px;
+}
+
+@media ( max-width:775px){
+    .container{
+        display: block;
+        width: 350px;
+        margin: auto;
+
+    }
+    .row{
+        flex-direction: column;
+    }
+    #image-left{
+       width: auto;
+       width: 300px;
+      margin: 0%;
+      padding: 0;
+      float: left;
+       
+    }
+
+}
+
+
